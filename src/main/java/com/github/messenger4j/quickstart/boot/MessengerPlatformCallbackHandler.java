@@ -197,6 +197,10 @@ public class MessengerPlatformCallbackHandler {
                         sendTypingOff(senderId);
                         break;
                         
+                    case "testApp":
+                    	sendTextMessage(senderId, "Its Works app Docast Api");
+                    	break;
+                        
                     default:
                         sendTextMessage(senderId, "Its Works app Docast Api");
                 }
