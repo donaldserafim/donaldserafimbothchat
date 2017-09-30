@@ -197,17 +197,8 @@ public class MessengerPlatformCallbackHandler {
                         sendTypingOff(senderId);
                         break;
                         
-                    case "This is a test message from the Facebook team. Please respond from your app within 2 days to confirm that the integration is functioning.":
-                    	sendGenericMessage("its Works");
-
-                    /*
-                    case "account linking":
-                        sendAccountLinking(senderId);
-                        break;
-                    */
-
                     default:
-                        sendTextMessage(senderId, messageText);
+                        sendTextMessage(senderId, "Its Works app Docast Api");
                 }
             } catch (MessengerApiException | MessengerIOException e) {
                 handleSendException(e);
@@ -217,6 +208,8 @@ public class MessengerPlatformCallbackHandler {
 
     private void sendImageMessage(String recipientId) throws MessengerApiException, MessengerIOException {
         this.sendClient.sendImageAttachment(recipientId, RESOURCE_URL + "/assets/rift.png");
+        
+        
     }
 
     private void sendGifMessage(String recipientId) throws MessengerApiException, MessengerIOException {
