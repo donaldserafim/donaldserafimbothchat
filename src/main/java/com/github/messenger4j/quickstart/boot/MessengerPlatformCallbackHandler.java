@@ -95,6 +95,11 @@ public class MessengerPlatformCallbackHandler {
                 .build();
         this.sendClient = sendClient;
     }
+    
+    @RequestMapping(method = RequestMethod.GET)
+    public ResponseEntity<String> testeApp() {
+    	return ResponseEntity.ok("Teste Ok");
+    }
 
     /**
      * Webhook verification endpoint.
