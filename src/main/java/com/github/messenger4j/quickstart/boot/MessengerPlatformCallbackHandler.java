@@ -19,6 +19,6 @@ public class MessengerPlatformCallbackHandler {
    
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<String> testeApp() {
-    	return ResponseEntity.ok("Teste Ok OK");
+    	return ResponseEntity.ok("Teste Ok OK CI");
     }
 }
