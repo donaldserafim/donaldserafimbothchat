@@ -6,7 +6,7 @@
 	<groupId>donaldserafimbothchat</groupId>
 	<artifactId>donaldserafimbothchat</artifactId>
 	<version>1.0.2</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>${project.groupId}:${project.artifactId}</name>
 	<description>Facebook Messenger Chatbot Template using Java, Spring Boot, and messenger4j</description>
@@ -50,5 +50,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
