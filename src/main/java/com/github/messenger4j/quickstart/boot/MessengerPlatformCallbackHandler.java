@@ -196,6 +196,9 @@ public class MessengerPlatformCallbackHandler {
                     case "typing off":
                         sendTypingOff(senderId);
                         break;
+                        
+                    case "This is a test message from the Facebook team. Please respond from your app within 2 days to confirm that the integration is functioning.":
+                    	sendGenericMessage("its Works");
 
                     /*
                     case "account linking":
